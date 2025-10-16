@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4.2</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+
+            <label for="descripcion">Descripcion</label><br>
+            <textarea name="descripcion" id="descripcion" rows="4" cols="20"></textarea> <br>
+            
+            <br><br>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto">
+            <br><br>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Añadir contador de vistas</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio">
+            € Impuesto
+            <select name="Impuesto" id="Impuesto">€ Impuesto
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select>
+            <br><br>
+            <p>Promoción</p>
+            <input type="radio" name="radio" id="Ninguno">
+            <label for="Ninguno">Ninguno</label> <br>
+
+            <input type="radio" name="radio" id="Transporte gratuito">
+            <label for="Ninguno">Transporte gratuito</label><br>
+
+            <input type="radio" name="radio" id="Descuento">
+            <label for="Ninguno">Descuento 5%</label>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
