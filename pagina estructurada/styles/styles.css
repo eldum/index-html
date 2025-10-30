@@ -1,0 +1,38 @@
+h1 {
+    font-family: "Kenia", sans-serif;
+    font-size: 28pt;
+    font-weight: 500;
+    font-family: cursive;
+    text-transform: uppercase;   
+    text-decoration: underline;
+    color: red;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "Kenia", sans-serif;
+    font-size: 22pt;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 3pt 2pt 1pt;
+    color: orange;
+}
+
+p {
+    font-family: "Times-new-roman";
+    font-size: 12pt;
+    color: gray;
+    text-align: center;
+    text-underline-offset: 1.5;
+}
+
+section p {
+  color: black; 
+}
+
+[strong] {
+  color: red;
+  font-weight: 900;
+}
