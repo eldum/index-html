@@ -21,7 +21,7 @@ Archivo	Descripción
 📘 README.md	Documentación del repositorio
 
 📂 Carpeta / Prácticas incluidas
-<br>
+<hr>
 <br>
 📁 Prácticas y Ejercicios
 
@@ -46,7 +46,7 @@ Archivo	Descripción
 🏁 practica final — (subida en noviembre)
 
 🎯 Objetivo del repositorio
-<br>
+<hr>
 <br>
 Este repositorio sirve como evidencia del progreso en el aprendizaje de:
 
