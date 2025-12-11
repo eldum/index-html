@@ -9,7 +9,7 @@ Puedes acceder al index.html publicado aquí:
 👉 https://eldum.github.io/index-html/
 <hr>
 📁 Contenido del repositorio
-
+<hr>
 📄 Archivos principales
 
 Archivo	Descripción
