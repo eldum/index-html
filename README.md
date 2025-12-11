@@ -9,12 +9,19 @@ Puedes acceder al index.html publicado aquí:
 👉 https://eldum.github.io/index-html/
 <hr>
 📁 Contenido del repositorio
+
 📄 Archivos principales
+
 Archivo	Descripción
+<br>
 🧩 index.html	Página principal del proyecto
+
 🎨 style.css	Hoja de estilos del index
+
 📘 README.md	Documentación del repositorio
+
 📂 Carpeta / Prácticas incluidas
+<br>
 <br>
 📁 Prácticas y Ejercicios
 
@@ -39,6 +46,7 @@ Archivo	Descripción
 🏁 practica final — (subida en noviembre)
 
 🎯 Objetivo del repositorio
+<br>
 <br>
 Este repositorio sirve como evidencia del progreso en el aprendizaje de:
 
