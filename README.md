@@ -7,41 +7,39 @@ Este repositorio reúne todas mis prácticas, ejercicios y proyectos realizados 
 Puedes acceder al index.html publicado aquí:
 
 👉 https://eldum.github.io/index-html/
-
+<hr>
 📁 Contenido del repositorio
 📄 Archivos principales
-
-index.html – Página principal del proyecto.
-
-style.css – Hoja de estilos vinculada al index.
-
-README.md – Documentación del repositorio.
-
+Archivo	Descripción
+🧩 index.html	Página principal del proyecto
+🎨 style.css	Hoja de estilos del index
+📘 README.md	Documentación del repositorio
 📂 Carpeta / Prácticas incluidas
-✔ Ejercicios y Prácticas por carpetas
+<br>
+📁 Prácticas y Ejercicios
 
-Practica 4.1 – Archivos subidos hace 2 meses.
+📦 Practica 4.1 — (subida en octubre)
 
-Practica 4.2 – Archivos subidos hace 2 meses.
+📦 Practica 4.2 — (subida en octubre)
 
-cajas – Carpeta modificada recientemente (se eliminó cajas/css).
+🗂️ cajas — (actualizada en noviembre)
 
-ejercicio 2 – Archivos subidos hace 3 meses.
+📝 ejercicio 2 — (subido en septiembre)
 
-ejercicio-1-main – Ejercicio completo subido hace 3 meses.
+📝 ejercicio-1-main — (subido en septiembre)
 
-flex – Práctica sobre flexbox (subida hace 2 semanas).
+🔧 flex — (subido en noviembre)
 
-horario – Ejercicio subido hace 3 meses.
+🕒 horario — (subido en septiembre)
 
-ofertas – Archivos subidos hace 1 mes.
+🛒 ofertas — (subido en noviembre)
 
-pagina estructurada – Subida hace 2 meses.
+📑 pagina estructurada — (subida en octubre)
 
-practica final – Proyecto final (subido hace 2 semanas).
+🏁 practica final — (subida en noviembre)
 
 🎯 Objetivo del repositorio
-
+<br>
 Este repositorio sirve como evidencia del progreso en el aprendizaje de:
 
 Estructura HTML
