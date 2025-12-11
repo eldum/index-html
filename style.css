@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+:root {
+	--bg: #0f172a;
+	--card: #111827;
+	--card-border: #1f2937;
+	--accent: #7c3aed;
+	--accent-2: #22d3ee;
+	--text: #e5e7eb;
+	--muted: #9ca3af;
+	--shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+	background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.25), transparent 25%),
+				radial-gradient(circle at 80% 30%, rgba(34, 211, 238, 0.2), transparent 25%),
+				linear-gradient(135deg, #0b1020, #0f172a 60%, #0b1020);
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5rem 1.5rem 3rem;
+}
+
+.page {
+	width: min(1100px, 100%);
+}
+
+.hero {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.35rem 0.75rem;
+	border-radius: 999px;
+	background: rgba(124, 58, 237, 0.15);
+	color: var(--accent);
+	letter-spacing: 0.08em;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+h1 {
+	font-size: clamp(2rem, 4vw, 2.75rem);
+	letter-spacing: -0.02em;
+	margin-top: 0.75rem;
+}
+
+h2 {
+	margin-top: 0.35rem;
+	color: var(--muted);
+	font-weight: 400;
+}
+
+.link-grid {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.45rem;
+	padding: 1.1rem 1.25rem;
+	background: var(--card);
+	border: 1px solid var(--card-border);
+	border-radius: 1rem;
+	text-decoration: none;
+	color: var(--text);
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	box-shadow: var(--shadow);
+	transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(34, 211, 238, 0.18));
+	opacity: 0;
+	transition: opacity 160ms ease;
+	z-index: -1;
+}
+
+.card span {
+	font-size: 0.95rem;
+	color: var(--muted);
+}
+
+.card strong {
+	font-size: 1.2rem;
+	letter-spacing: -0.01em;
+}
+
+.card:hover {
+	transform: translateY(-4px) scale(1.01);
+	border-color: rgba(124, 58, 237, 0.65);
+	box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.card:hover::after {
+	opacity: 1;
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 2rem 1.1rem 2.5rem;
+	}
+
+	.card {
+		padding: 1rem;
+	}
+}
