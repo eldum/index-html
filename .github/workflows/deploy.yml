@@ -1,24 +1,23 @@
-name: Deploy Website via SFTP
+name: Deploy to AwardSpace
 
 on:
   push:
     branches:
-      - main  # Cada push a main dispara el deploy
+      - main
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
 
-      - name: Deploy via SFTP
-        uses: appleboy/sftp-action@v0.1.4
-        with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          local_dir: ./eldum.atwebpages.com/           # Carpeta local en tu repo
-          remote_dir: /public_html/  # Carpeta en AwardSpace
-          rm: true                # Borra archivos antiguos antes de subir
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /eldum.atwebpages.com/
+        local-dir: ./
