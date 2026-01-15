@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          local_dir: ./           # Carpeta local en tu repo
+          local_dir: /eldum.atwebpages.com/           # Carpeta local en tu repo
           remote_dir: /public_html/  # Carpeta en AwardSpace
           rm: true                # Borra archivos antiguos antes de subir
