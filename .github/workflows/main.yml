@@ -1,0 +1,24 @@
+name: Deploy Website to AwardSpace via SFTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via SFTP
+        uses: appleboy/sftp-action@master
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local_dir: ./          # Carpeta de tu proyecto local en GitHub
+          remote_dir: /public_html/  # Carpeta en el hosting
+          rm: true               # Borra los archivos existentes antes de subir
