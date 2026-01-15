@@ -1,0 +1,24 @@
+name: Deploy Website via SFTP
+
+on:
+  push:
+    branches:
+      - main  # Cada push a main dispara el deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via SFTP
+        uses: appleboy/sftp-action@v0.1.4
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local_dir: ./           # Carpeta local en tu repo
+          remote_dir: /public_html/  # Carpeta en AwardSpace
+          rm: true                # Borra archivos antiguos antes de subir
